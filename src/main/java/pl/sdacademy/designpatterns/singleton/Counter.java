@@ -5,7 +5,6 @@ public class Counter {
     private int value = 0;
 
     private Counter() {
-
     }
 
     public static Counter getInstance() {
