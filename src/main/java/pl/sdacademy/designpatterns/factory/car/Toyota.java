@@ -1,6 +1,6 @@
 package pl.sdacademy.designpatterns.factory.car;
 
-public class Toyota implements Car {
+class Toyota implements Car {
 
   private String modelName;
   private EngineType type;
