@@ -1,11 +1,8 @@
 package pl.sdacademy.designpatterns.adapter;
 
-import pl.sdacademy.designpatterns.adapter.systema.SystemAUser;
-import pl.sdacademy.designpatterns.adapter.systema.SystemAUserAdapter;
-import pl.sdacademy.designpatterns.adapter.systemb.SystemBUser;
-import pl.sdacademy.designpatterns.adapter.systemb.SystemBUserAdapter;
-import pl.sdacademy.designpatterns.adapter.systemc.SystemCUser;
-import pl.sdacademy.designpatterns.adapter.systemc.SystemCUserAdapter;
+import pl.sdacademy.designpatterns.adapter.systema.*;
+import pl.sdacademy.designpatterns.adapter.systemb.*;
+import pl.sdacademy.designpatterns.adapter.systemc.*;
 
 import java.util.Collections;
 
