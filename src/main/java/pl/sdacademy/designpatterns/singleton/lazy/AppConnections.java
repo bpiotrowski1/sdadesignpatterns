@@ -16,6 +16,15 @@ public class AppConnections {
     }
 
     public static AppConnections getInstance() {
+        /* DOUBLE CHECKED
+        if(appConnections == null) {
+            synchronized(AppConnections.class) {
+                if(appConnections == null) {
+                    appConnections = new AppConnections();
+                }
+            }
+        }
+         */
         if(appConnections == null) {
             appConnections = new AppConnections();
             System.out.println("Initialized AppConnections");
