@@ -15,14 +15,4 @@ public class Person {
     private Role role;
     private int numOfLogins;
     private boolean verified;
-
-    public Person(final String name, final String email, final String phone, final LocalDate birthDate, final Role role, final int numOfLogins, final boolean verified) {
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
-        this.birthDate = birthDate;
-        this.role = role;
-        this.numOfLogins = numOfLogins;
-        this.verified = verified;
-    }
 }
