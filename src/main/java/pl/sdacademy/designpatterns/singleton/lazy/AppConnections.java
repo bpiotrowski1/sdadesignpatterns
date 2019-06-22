@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AppConnections {
-    @Getter private static AppConnections appConnections = new AppConnections();
+    @Getter private static AppConnections appConnections;
     @Getter private List<String> connectedUsers;
     @Getter private long timeout;
     @Getter private int currentConnectionsNum = 0;
@@ -16,6 +16,10 @@ public class AppConnections {
     }
 
     public static AppConnections getInstance() {
+        if(appConnections == null) {
+            appConnections = new AppConnections();
+            System.out.println("Initialized AppConnections");
+        }
         return appConnections;
     }
 
