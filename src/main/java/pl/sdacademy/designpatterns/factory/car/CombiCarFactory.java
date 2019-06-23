@@ -8,7 +8,7 @@ public class CombiCarFactory implements AbstractFactory<Car> {
     // A4 - audi a4 combi - 2.5 engine
 
     @Override
-    public Car create(String type) throws Exception {
+    public Car create(final String type) throws Exception {
         switch (type) {
             case "TC":
                 return createCorollaCombi();

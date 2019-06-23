@@ -4,7 +4,7 @@ import pl.sdacademy.designpatterns.factory.car.Car;
 
 public class FactoryDemo {
     public static void main(String[] args) throws Exception {
-        final FactoryCategory factoryCategory = FactoryCategory.SEDANS;
+        final FactoryCategory factoryCategory = FactoryCategory.HATCHBACKS;
         final AbstractFactory<Car> factory = FactoryProvider.getFactory(factoryCategory);
         final Car car = factory.create("TC");
 
