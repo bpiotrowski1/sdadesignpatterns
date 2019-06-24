@@ -1,16 +1,16 @@
 package pl.sdacademy.designpatterns.decorator.homework;
 
-public class FlatPizzaBase implements IPizza {
+public class WithSalamiPizza implements IPizza {
     private IPizza pizzaBase;
 
-    public FlatPizzaBase(IPizza pizzaBase) {
+    public WithSalamiPizza(IPizza pizzaBase) {
         this.pizzaBase = pizzaBase;
     }
 
     public void makePizza() {
-        addIngredient("Flat");
-        System.out.print("Flat ");
         pizzaBase.makePizza();
+        addIngredient("Salami");
+        System.out.println(" with Salami");
     }
 
     @Override
